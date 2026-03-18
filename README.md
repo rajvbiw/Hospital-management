@@ -37,8 +37,7 @@ docker push <your-username>/hospital-frontend:latest
 ### 2. Infrastructure Provisioning (Important Cost Warning)
 
 > [!WARNING]
-> **AWS Free Tier Notice**: The Terraform configuration in this project provisions an Amazon EKS (Elastic Kubernetes Service) cluster and a NAT Gateway. **EKS is NOT covered under the AWS Free Tier.** Deploying the `terraform` folder will incur charges of approximately $0.10/hour (~$73/month) for the EKS control plane alone, plus the cost of EC2 worker nodes.
-
+> **AWS Free Tier Notice**: The Terraform configuration in this project provisions an Amazon EKS (Elastic Kubernetes Service) cluster and a NAT Gateway. **EKS is NOT covered under the AWS Free Tier.**
 If you are strictly using a free account, **DO NOT run `terraform apply`**. Instead, use a free local Kubernetes cluster:
 1. Open **Docker Desktop**.
 2. Go to Settings > Kubernetes.
